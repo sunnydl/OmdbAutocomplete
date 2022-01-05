@@ -22,6 +22,13 @@ npm start
 ```
 7. Open `http://localhost:3000/` on your browser and you should see the component being rendered and ready to use.
 
+### Testing
+From project root folder
+```
+cd client
+npm test
+```
+
 ### Component structure
 
 ![Blank diagram](https://user-images.githubusercontent.com/56567343/148298736-04d7f968-fe9b-469b-8ffb-671b99223e21.png)
