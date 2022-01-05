@@ -1,0 +1,133 @@
+.searchBar {
+    background-color: #FFFFFF;
+
+    min-height: 38px;
+    border: 2px solid #cccccc; /* Can be changed for better feel of searchbar border */
+    border-radius: 30px;
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    -webkit-box-flex: 1;
+    -webkit-box-align: center;
+}
+
+.autocompleteSearch {
+    position: relative;
+
+    line-height: 100%;
+    border-width:0px;
+    border:none;
+    margin-left: 0.5rem;
+    
+    flex: 1;
+}
+
+.autocompleteSearch input[type="text"] {
+    background-color: transparent;
+    color: #000000;
+
+    height: 100%;
+    width: 100%;
+    border-width:0px;
+    border:none;
+
+    font-family: "Segoe UI";
+    font-size: 1em;
+}
+
+.autocompleteSearch input[type="text"]:focus {
+    outline: 0;
+}
+
+.pillsWrapper {
+    height: fit-content;
+    width: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pill {
+    background-color: #cccccc; /* Can be changed for better feel of pill color */
+    color: #000000;
+
+    height: auto;
+    width: auto;
+    border-radius: 30px;
+    padding: 0.5rem;
+    margin: 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 1em;
+}
+
+.pillCloseBtn {
+    background-color: transparent;
+
+    border: none;
+    margin-left: 0.25rem;
+}
+
+.pillCloseBtn:hover {
+    cursor: pointer;
+}
+
+.suggestions {
+    position: absolute;
+    z-index: 1;
+
+    background-color: #FFFFFF;
+
+    left: 0;
+    right: 0;
+    border-top: 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px #000000;
+}
+
+.suggestion {
+    word-wrap: break-word;
+
+    padding: 1rem;
+}
+
+.suggestion:hover {
+    background-color: #ADD8E6; /* Can be changed for better feel of suggestion color */
+    
+    cursor: pointer;
+}
+
+.suggestion p {
+    opacity: 0.4;
+
+    padding: 0;
+    margin: 0;
+}
+
+.suggestionDisabled {
+    pointer-events: none;
+
+    opacity: 0.4;
+
+    text-align: center;
+    word-wrap: break-word;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.errMessage {
+    color: #ff0000;
+
+    text-align: center;
+
+    margin-top: 10px;
+}
