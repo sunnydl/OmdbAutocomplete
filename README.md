@@ -39,12 +39,13 @@ npm test
 |- ...
 |- client/                # -> Front end
     |- src/
+        |- api/           # Asynchronous API functions used to talk with backend
         |- components/
-                |-  Autocomplete
-                        |- Custom-hooks
+                |-  Autocomplete/
+                        |- Custom-hooks/
                                 | -useClickHook.js             # Custom hooks for handling user clicking events
-                        |- SearchBar
-                                |- AutocompleteSearch
+                        |- SearchBar/
+                                |- AutocompleteSearch/
                                           |- InputField.jsx    # User input field
                                           |- Suggestions.jsx   # Movie suggestions
                                           |- index.jsx
